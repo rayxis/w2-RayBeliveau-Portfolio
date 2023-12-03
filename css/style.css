@@ -21,6 +21,7 @@ a {
 }
 
 a:hover,
+a:focus,
 img:hover ~ a {
   border-color: rgba(255, 255, 255, 0.75);
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.75);
@@ -127,7 +128,6 @@ footer {
   list-style: none;
   height: 500px;
   width: 100%;
-  border-radius: 20px;
 }
 #work ul li {
   position: relative;
@@ -139,7 +139,8 @@ footer {
   transform-origin: 50% 50%;
   transition-duration: 0.5s;
 }
-#work ul li:hover:not(:first-of-type) {
+#work ul li:hover:not(:first-of-type),
+#work ul li:focus-within:not(:first-of-type) {
   z-index: 1;
   transform: scale(1.05);
 }
