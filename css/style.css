@@ -1,14 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  min-width: 404px;
+  min-width: 375px;
   font-family: Oswald, sans-serif;
   font-size: 88%;
 }
 
+/*** Links ***/
 a {
   position: relative;
   padding: 5px;
@@ -23,12 +25,14 @@ a {
 a:hover,
 a:focus,
 img:hover ~ a {
+  background-color: rgba(0, 0, 0, 0);
   border-color: rgba(255, 255, 255, 0.75);
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.75);
   transition-duration: 0.5s;
 }
 
-header.head {
+/*** Page Header ***/
+header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -39,6 +43,12 @@ header.head {
   z-index: 10;
   width: 100%;
   color: white;
+  /* If page drops below 700px, change alignment. */
+}
+@media (width <= 700px) {
+  header {
+    align-items: flex-start;
+  }
 }
 
 h1 {
@@ -68,27 +78,32 @@ h1:hover::before {
   opacity: 0.5;
 }
 
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
 nav {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
   margin-right: 50px;
+  /* If page scales below 700px, flip the menu down */
+}
+@media (width <= 700px) {
+  nav {
+    flex-direction: column;
+    align-self: flex-end;
+    margin: 30px 10px;
+  }
 }
 
 section {
   display: flex;
   flex-flow: column nowrap;
-  box-sizing: border-box;
-  padding: 20px;
   z-index: 1;
+  padding: 20px;
+}
+section h2 {
+  font-size: 2.5rem;
+}
+section h3 {
+  font-size: 1.5rem;
 }
 
 footer {
@@ -104,11 +119,41 @@ footer {
   justify-content: center;
   height: 100vh;
   background-attachment: fixed;
-  background-color: black;
   background-image: url("/images/RayBeliveauHeadshot.jpg");
   background-position: left top;
   background-repeat: no-repeat;
-  color: white;
+  /* Maintain a balance between background image and text. */
+}
+@media (width >= 1200px) {
+  #about_me article, #about_me h2 {
+    margin: 0 20px 0 900px;
+  }
+}
+@media (900px < width <= 1200px) {
+  #about_me {
+    background-size: 60% auto;
+    background-position: top left;
+  }
+  #about_me article, #about_me h2 {
+    margin: 0 20px 0 50%;
+  }
+}
+@media (width <= 900px) {
+  #about_me {
+    background-size: contain;
+    justify-content: flex-end;
+  }
+  #about_me article, #about_me h2 {
+    margin: 0 20px;
+  }
+  #about_me article {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+@media (width < 375px) {
+  #about_me {
+    background-size: 375px auto;
+  }
 }
 #about_me p {
   padding: 10px;
@@ -119,6 +164,12 @@ footer {
 
 #work {
   color: black;
+  /* Below 700px, change the section height to fullscreen */
+}
+@media (width <= 700px) {
+  #work {
+    height: 100vh;
+  }
 }
 #work ul {
   display: flex;
@@ -128,6 +179,13 @@ footer {
   list-style: none;
   height: 500px;
   width: 100%;
+  /* Below 700px, change the container height and direction */
+}
+@media (width <= 700px) {
+  #work ul {
+    height: 100%;
+    flex-direction: row;
+  }
 }
 #work ul li {
   position: relative;
@@ -135,14 +193,18 @@ footer {
   height: calc(33.33% - 1px);
   background-color: black;
   background-position: center center;
-  box-sizing: border-box;
   transform-origin: 50% 50%;
   transition-duration: 0.5s;
+  /* Below 700px, change the size of the tiles */
+  /* Above 700px, change the shape of the border */
+  /* Below 700px, change the shape of the border */
+  /* Scale Effect */
 }
-#work ul li:hover:not(:first-of-type),
-#work ul li:focus-within:not(:first-of-type) {
-  z-index: 1;
-  transform: scale(1.05);
+@media (width <= 700px) {
+  #work ul li {
+    width: calc(50% - 1px);
+    height: calc(16.6666666667% - 2px);
+  }
 }
 #work ul li:first-of-type {
   width: 50%;
@@ -150,14 +212,41 @@ footer {
   background-attachment: fixed;
   background-position: center;
   background-size: auto;
+  /* Below 700px, change the tile size and shape of the border */
+}
+#work ul li:first-of-type, #work ul li:first-of-type a {
+  border-radius: 15px 0 0 15px;
+}
+@media (width <= 700px) {
+  #work ul li:first-of-type {
+    width: 100%;
+    height: 50%;
+  }
+  #work ul li:first-of-type, #work ul li:first-of-type a {
+    border-radius: 15px 15px 0 0;
+  }
 }
 #work ul li:first-of-type div {
   bottom: 50px;
   transform: scale(1.5);
   transform-origin: bottom left;
 }
+@media (width > 700px) {
+  #work ul li:nth-of-type(5), #work ul li:nth-of-type(5) a {
+    border-top-right-radius: 15px;
+  }
+}
+@media (width <= 700px) {
+  #work ul li:nth-of-type(6), #work ul li:nth-of-type(6) a {
+    border-radius: 0 0 0 15px;
+  }
+}
 #work ul li:nth-of-type(7), #work ul li:nth-of-type(7) > a {
   border-bottom-right-radius: 15px;
+}
+#work ul li:hover:not(:first-of-type), #work ul li:focus-within:not(:first-of-type) {
+  z-index: 1;
+  transform: scale(1.05);
 }
 #work ul a {
   display: block;
@@ -167,9 +256,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 0;
-}
-#work ul a:hover {
-  background-color: rgba(0, 0, 0, 0);
 }
 #work ul p {
   font-variant: all-small-caps;
@@ -183,10 +269,7 @@ footer {
 }
 
 #contact_me {
-  justify-content: space-between;
   gap: 20px;
-  background-color: black;
-  color: white;
 }
 #contact_me menu {
   align-self: center;
@@ -203,61 +286,9 @@ footer {
   height: 20px;
 }
 
-@media (width >= 1200px) {
-  #about_me header,
-  #about_me article {
-    margin-left: 900px;
-    margin-right: 50px;
-    width: auto;
-  }
-  #work > ul li:first-of-type, #work > ul li:first-of-type > a {
-    border-radius: 15px 0 0 15px;
-  }
-  #work > ul li:nth-of-type(5), #work > ul li:nth-of-type(5) > a {
-    border-top-right-radius: 15px;
-  }
-}
-@media (width <= 700px) {
-  header.head {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  nav {
-    flex-direction: column;
-    align-self: flex-end;
-    margin-right: 10px;
-  }
-  #work {
-    height: 100vh;
-  }
-  #work ul {
-    height: 100%;
-    flex-direction: row;
-  }
-  #work ul li {
-    width: calc(50% - 1px);
-    height: calc(16.6666666667% - 2px);
-  }
-  #work ul li:first-of-type {
-    width: 100%;
-    height: 50%;
-  }
-  #work ul li:first-of-type, #work ul li:first-of-type > a {
-    border-radius: 15px 15px 0 0;
-  }
-  #work ul li:nth-of-type(6),
-  #work ul li:nth-of-type(6) a {
-    border-bottom-left-radius: 15px;
-  }
-}
-@media (width <= 1200px) {
-  #about_me {
-    justify-content: flex-end;
-    background-size: contain;
-  }
-  #about_me article {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+.dark {
+  background-color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

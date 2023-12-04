@@ -9,21 +9,20 @@
 	</head>
 	<body>
 		<!-- Page Header -->
-		<header class="head">
+		<header>
 			<h1>Ray Beliveau</h1>
 			<nav class="head__nav">
-				<a href="#about_me" class="link">About Me</a>
-				<a href="#work" class="link">Work</a>
-				<a href="#contact_me" class="link">Contact Me</a>
+				<a class="link" href="#about_me">About Me</a>
+				<a class="link" href="#work">Work</a>
+				<a class="link" href="#contact_me">Contact Me</a>
 			</nav>
 		</header>
 
 		<!-- Page Content -->
 		<main class="content">
-			<section id="about_me" class="">
-				<header class="">
-					<h2 class="">About Me</h2>
-				</header>
+			<!-- About Me -->
+			<section id="about_me" class="section dark">
+				<h2>About Me</h2>
 				<article>
 					<p>Hello, I’m Ray Beliveau, a web developer, actor, and YouTube content creator based out of Round
 						Rock., Texas. I have a passion for exploring new ideas, creativity and solving puzzles, which I
@@ -39,13 +38,12 @@
 				</article>
 			</section>
 
-			<section id="work" class="">
-				<header class="">
-					<h2 class="">Work</h2>
-				</header>
+			<!-- Work -->
+			<section id="work">
+				<h2>Work</h2>
 				<ul>
 					<li style="background-image: url('/images/pexels-thisisengineering-3861976.jpg');">
-						<a href="https:/think.raybeliveau.com/student_requests.php?code=VRA2023">
+						<a href="https://think.raybeliveau.com/student_requests.php?code=VRA2023">
 							<div>
 								<h3>VRA Student Parser</h3>
 								<p>PHP / JS / API / Redis / SASS</p>
@@ -54,7 +52,7 @@
 					</li>
 					<li style="background-image: url('/images/pexels-terje-sollie-320617.jpg');">
 						<a href="#">
-							<div>
+							<div class="tile__container">
 								<h3>YouTube Stats Analyzer</h3>
 								<p>PHP / JS / Redis / SASS</p>
 							</div>
@@ -103,10 +101,9 @@
 				</ul>
 			</section>
 
-			<section id="contact_me">
-				<header class="">
-					<h2 class="">Contact Me</h2>
-				</header>
+			<!-- Contact -->
+			<section id="contact_me" class="section dark">
+				<h2>Contact Me</h2>
 
 				<menu>
 					<li class="phone">
@@ -130,7 +127,7 @@
 		</main>
 
 		<!-- Page Footer -->
-		<footer class="page__footer">Created and designed by Ray Beliveau.<br/>Headshot by Discovery. Icons from Icons8.
+		<footer>Created and designed by Ray Beliveau.<br/>Headshot by Discovery. Icons from Icons8.
 			All other pictures from Pexels.
 		</footer>
 	</body>
