@@ -17,7 +17,8 @@ file is properly configured. Proper permissions for the directory `chmod -R 644 
 enforcing) should be configured: `sudo restorecon -vRF /var/www/html`.
 
 The screenshots folder and this Readme server purpose in the website's operation, and should be left omitted from 
-the root directory.
+the root directory. I've included the SASS (SCSS) file for organizational purposes, but it is also unnecessary as 
+are the aforementioned files.
 
 ## Usage
 
