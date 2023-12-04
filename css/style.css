@@ -121,11 +121,7 @@ footer {
   justify-content: center;
   height: 100vh;
   background-attachment: fixed;
-<<<<<<<<< Temporary merge branch 1
-  background-image: url("/images/RayBeliveauHeadshot.jpg");
-=========
-  background-image: url("./images/RayBeliveauHeadshot.jpg");
->>>>>>>>> Temporary merge branch 2
+  background-image: url("../images/RayBeliveauHeadshot.jpg");
   background-position: left top;
   background-repeat: no-repeat;
 }
