@@ -74,6 +74,7 @@ h1 {
 		opacity:             1;
 		transition-duration: 1s;
 	}
+
 	&:hover::before {
 		content:  "Ray Beliveau";
 		position: absolute;
@@ -105,6 +106,7 @@ section {
 	padding:   20px;
 
 	h2 {font-size: 2.5rem;}
+
 	h3 {font-size: 1.5rem}
 }
 
@@ -113,9 +115,11 @@ footer {
 
 	font-size:        0.8rem;
 	font-weight:      lighter;
+	line-height:      1.5rem;
 	text-align:       center;
 	color:            white;
 	background-color: black;
+
 }
 
 /*** Content ***/

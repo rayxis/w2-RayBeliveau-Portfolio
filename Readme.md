@@ -10,6 +10,8 @@ membership group that I'm a moderator for. While I don't have any other public p
 my portfolio, I've attempted to create a layout that will work well for multiple projects in the future, using 
 example project ideas.
 
+Headshot of me by Discovery Photos (https://discovery.photos). Icons from icons8. Additional images from pexels.com.
+
 ## Installation
 
 Installation is simple. Copy files to your root web directory (ex. `/var/www/html`), and ensure that your httpd.conf
@@ -27,7 +29,11 @@ the corresponding website within your browser.
 
 ## Screenshots
 
-
+![Screenshot of completed website](./screenshots/Screenshot%202023-12-03%20at%2011.25.55%E2%80%AFPM.png)
+![Screenshot of completed website](./screenshots/Screenshot%202023-12-03%20at%2011.26.27%E2%80%AFPM.png)
+![Screenshot of completed website](./screenshots/Screenshot%202023-12-03%20at%2011.26.54%E2%80%AFPM.png)
+![Screenshot of completed website](./screenshots/Screenshot%202023-12-03%20at%2011.27.07%E2%80%AFPM.png)
+![Screenshot of completed website](./screenshots/Screenshot%202023-12-03%20at%2011.27.21%E2%80%AFPM.png)
 
 ## User Story
 
