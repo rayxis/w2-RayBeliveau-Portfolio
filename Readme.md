@@ -2,15 +2,17 @@
 
 ## Description
 
-This is a website demonstrating my portfolio. I've incorporated several CSS styles to add additional functionality 
-to the website, such as effects and transitions for link hovering, popup tiles on hover for work, and fixed 
-backgrounds. I've displayed many of the skills that I've already possessed, and even included a live JavaScript 
-project that I've been working on for (mostly for fun but also for my portfolio), for a Facebook YouTube-related 
-membership group that I'm a moderator for. While I don't have any other public projects that I'm able to share for 
-my portfolio, I've attempted to create a layout that will work well for multiple projects in the future, using 
+This is a website demonstrating my portfolio. I've incorporated several CSS styles to add additional functionality
+to the website, such as effects and transitions for link hovering, popup tiles on hover for work, and fixed
+backgrounds. I've displayed many of the skills that I've already possessed, and even included a live JavaScript
+project that I've been working on for (mostly for fun but also for my portfolio), for a Facebook YouTube-related
+membership group that I'm a moderator for. While I don't have any other public projects that I'm able to share for
+my portfolio, I've attempted to create a layout that will work well for multiple projects in the future, using
 example project ideas.
 
 Headshot of me by Discovery Photos (https://discovery.photos). Icons from icons8. Additional images from pexels.com.
+All code is my own, and reference material provided by W3C and MDN (I couldn't remember the full syntax of some of the
+shortcuts, like transitions).
 
 ## Installation
 
@@ -18,13 +20,13 @@ Installation is simple. Copy files to your root web directory (ex. `/var/www/htm
 file is properly configured. Proper permissions for the directory `chmod -R 644 /var/www/html` and SELinux (if
 enforcing) should be configured: `sudo restorecon -vRF /var/www/html`.
 
-The screenshots folder and this Readme server purpose in the website's operation, and should be left omitted from 
-the root directory. I've included the SASS (SCSS) file for organizational purposes, but it is also unnecessary as 
+The screenshots folder and this Readme server purpose in the website's operation, and should be left omitted from
+the root directory. I've included the SASS (SCSS) file for organizational purposes, but it is also unnecessary as
 are the aforementioned files.
 
 ## Usage
 
-Usage for this project is straightforward: Ensure the preceding steps in Installation have been followed, and visit 
+Usage for this project is straightforward: Ensure the preceding steps in Installation have been followed, and visit
 the corresponding website within your browser.
 
 ## Screenshots
