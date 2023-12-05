@@ -29,6 +29,8 @@ are the aforementioned files.
 Usage for this project is straightforward: Ensure the preceding steps in Installation have been followed, and visit
 the corresponding website within your browser.
 
+A live version of this can be viewed here: https://rayxis.github.io/w2-RayBeliveau-Portfolio/
+
 ## Screenshots
 
 ![Screenshot of completed website](./screenshots/Screenshot%202023-12-03%20at%2011.25.55%E2%80%AFPM.png)
