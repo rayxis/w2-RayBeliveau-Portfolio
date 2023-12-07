@@ -260,6 +260,8 @@ footer {
 			background-color: rgba(0, 0, 0, .5);
 			border:           none;
 			border-radius:    0;
+
+			&:hover {background-color: rgba(0, 0, 0, 0);}
 		}
 
 		p {font-variant: all-small-caps;}

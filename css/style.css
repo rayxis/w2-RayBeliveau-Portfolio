@@ -259,6 +259,9 @@ footer {
   border: none;
   border-radius: 0;
 }
+#work ul a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
 #work ul p {
   font-variant: all-small-caps;
 }
