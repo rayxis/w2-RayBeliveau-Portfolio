@@ -1,6 +1,6 @@
 <?php
 	// Load the JSON data file and decode the json into an object.
-	$data = json_decode(file_get_contents('data.json'));
+	$data = json_decode(file_get_contents('assets/js/data.json'));
 ?>
 
 <!DOCTYPE html>
