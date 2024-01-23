@@ -66,10 +66,10 @@ class PageData {
 			title.textContent  = work.title;
 
 			// Add the list item to the list.
-			this.elements.contact.appendChild(liElement);
+			this.elements.work.appendChild(liElement);
 		});
 	}
 }
 
 // Load the page data class
-const pd = new PageData('data.json');
+const pd = new PageData('/w2-RayBeliveau-Portfolio/assets/js/data.json');
